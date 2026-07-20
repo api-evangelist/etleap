@@ -1,0 +1,21 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.etleap.com/docs/api-v2/d34fe805d6516-how-to-get-started
+docs: https://docs.etleap.com/docs/api-v2
+summary:
+  types: [http]
+  http_schemes: [basic]
+  api_key_in: []
+  oauth2_flows: []
+  notes: >-
+    Etleap API v2 authenticates every request with HTTP Basic authentication.
+    Credentials are an API-user's key and secret issued from the Etleap
+    application. A separate OAuth 2.0 flow (initiateOAuth2) exists only for
+    authorizing third-party source connections (e.g. Google, Salesforce), not
+    for authenticating to the Etleap API itself.
+schemes:
+- name: basicAuth
+  type: http
+  scheme: basic
+  source: docs.etleap.com/docs/api-v2
+  applies_to: All API v2 requests to https://api.etleap.com/api/v2
