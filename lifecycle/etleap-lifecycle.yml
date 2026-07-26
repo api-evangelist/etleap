@@ -1,0 +1,16 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.etleap.com/docs/api-v2
+versioning:
+  scheme: uri-path
+  current: v2
+  docs: https://docs.etleap.com/docs/api-v2
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+  detail: No formal deprecation/Sunset (RFC 8594) policy located in public docs this pass.
+sla:
+  url: null
+  uptime_target: null
+status_page: https://status.etleap.com
+deprecated_operations: []

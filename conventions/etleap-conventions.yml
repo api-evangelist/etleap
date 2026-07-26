@@ -1,0 +1,29 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.etleap.com/docs/api-v2
+authentication:
+  style: http-basic
+  detail: See authentication/etleap-authentication.yml
+  ref: authentication/etleap-authentication.yml
+versioning:
+  scheme: uri-path
+  current: v2
+  detail: Version is carried in the base path (/api/v2). Prior generation was API v1.
+  base_url: https://api.etleap.com/api/v2
+idempotency:
+  supported: false
+  detail: No idempotency-key header or contract is documented for API v2 as of this pass.
+pagination:
+  documented: unknown
+  detail: >-
+    List operations (getPipelines, getModels, getTeams, getUsers, getConnections)
+    exist; a specific pagination parameter/response contract was not confirmed
+    from public docs in this pass and is left unasserted rather than fabricated.
+error_handling:
+  detail: >-
+    Errors are returned as HTTP status codes with JSON bodies; a formal RFC 9457
+    problem+json contract was not confirmed from public docs.
+cross_links:
+  authentication: authentication/etleap-authentication.yml
+  lifecycle: lifecycle/etleap-lifecycle.yml
+  data_model: data-model/etleap-data-model.yml

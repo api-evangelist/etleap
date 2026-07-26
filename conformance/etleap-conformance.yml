@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+source: https://etleap.com/
+compliance_program:
+  certifications: [SOC 2, HIPAA, GDPR, CCPA]
+  detail: >-
+    Etleap advertises SOC 2, HIPAA, GDPR, and CCPA compliance on its marketing
+    site. No public trust portal (trust.etleap.com) or certification-report
+    download page was located in this pass.
+standards:
+- id: soc2
+  conforms: true
+  evidence: Advertised on etleap.com
+- id: hipaa
+  conforms: true
+  evidence: Advertised on etleap.com
+- id: gdpr
+  conforms: true
+  evidence: Advertised on etleap.com
+- id: ccpa
+  conforms: true
+  evidence: Advertised on etleap.com
+- id: oauth2
+  conforms: true
+  evidence: OAuth 2.0 used for authorizing third-party source connections (initiateOAuth2)
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: Not confirmed in public docs

@@ -1,7 +1,30 @@
 aid: etleap
 name: Etleap
-description: Etleap is a company surfaced as a portfolio company of a16z, y-combinator and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Etleap is a managed ETL and data-integration platform that streamlines data
+  ingestion, transformation, and observability so data teams can build cloud
+  data warehouses and lakes with minimal engineering effort. Originally built
+  as an "autopilot" for Amazon Redshift, S3, and AWS Glue, Etleap now centers on
+  Apache Iceberg as a data foundation: it continuously ingests operational data
+  from 50+ databases, SaaS applications, event streams, and files; shapes it
+  with visual data wrangling and dbt Core in a single pipeline; and keeps
+  destination tables healthy with automated maintenance. Destinations include
+  Amazon Redshift, Snowflake, Databricks, Amazon S3, and Iceberg. Etleap exposes
+  a REST API v2 for creating and managing connections, pipelines, models, teams,
+  and users, and ships an official Terraform provider generated from that API.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://framerusercontent.com/images/4uqulfTuAM7iY7udMPgBO6bEqME.png
 url: https://raw.githubusercontent.com/api-evangelist/etleap/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +35,83 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-apis: []
+- Data Integration
+- ETL
+- ELT
+- Data Pipelines
+- Data Warehouse
+- Data Lake
+- Apache Iceberg
+- Analytics
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: Etleap API v2
+  description: >-
+    Etleap's external REST API for creating and managing connections, pipelines,
+    models, dbt schedules, teams, and users. Uses HTTP Basic authentication.
+  humanURL: https://docs.etleap.com/docs/api-v2
+  baseURL: https://api.etleap.com/api/v2
+  properties:
+  - type: APIReference
+    url: https://docs.etleap.com/docs/api-v2
+  - type: Authentication
+    url: authentication/etleap-authentication.yml
+  - type: MCPServer
+    url: mcp/etleap-mcp.yml
+  - type: DataModel
+    url: data-model/etleap-data-model.yml
+common:
+- type: DeveloperPortal
+  url: https://docs.etleap.com/
+- type: Documentation
+  url: https://docs.etleap.com/documentation/
+- type: APIReference
+  url: https://docs.etleap.com/docs/api-v2
+- type: GettingStarted
+  url: https://docs.etleap.com/documentation/quickstarts/
+- type: GitHubOrganization
+  url: https://github.com/etleap
+- type: Blog
+  url: https://etleap.com/blog
+- type: SignUp
+  url: https://app.etleap.com/#/login
+- type: TermsOfService
+  url: https://etleap.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://etleap.com/privacy-policy
+- type: StatusPage
+  url: https://status.etleap.com
+- type: Authentication
+  url: authentication/etleap-authentication.yml
+- type: Packages
+  url: packages/etleap-packages.yml
+- type: SDKs
+  url: packages/etleap-packages.yml
+- type: MCPServer
+  url: mcp/etleap-mcp.yml
+- type: LLMsTxt
+  url: llms/etleap-llms.txt
+- type: Conventions
+  url: conventions/etleap-conventions.yml
+- type: Lifecycle
+  url: lifecycle/etleap-lifecycle.yml
+- type: Conformance
+  url: conformance/etleap-conformance.yml
+- type: Compliance
+  url: conformance/etleap-conformance.yml
+- type: DataModel
+  url: data-model/etleap-data-model.yml
+- type: DomainSecurity
+  url: security/etleap-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

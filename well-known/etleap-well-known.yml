@@ -1,0 +1,54 @@
+generated: '2026-07-19'
+method: searched
+hosts:
+- https://api.etleap.com
+- https://etleap.com
+- https://docs.etleap.com
+documents:
+- host: https://api.etleap.com
+  path: /.well-known/security.txt
+  status: 404
+- host: https://api.etleap.com
+  path: /.well-known/openid-configuration
+  status: 404
+- host: https://api.etleap.com
+  path: /.well-known/oauth-authorization-server
+  status: 404
+- host: https://api.etleap.com
+  path: /.well-known/api-catalog
+  status: 404
+- host: https://api.etleap.com
+  path: /.well-known/ai-plugin.json
+  status: 404
+- host: https://etleap.com
+  path: /.well-known/security.txt
+  status: 404
+- host: https://etleap.com
+  path: /.well-known/openid-configuration
+  status: 404
+- host: https://etleap.com
+  path: /.well-known/oauth-authorization-server
+  status: 404
+- host: https://etleap.com
+  path: /.well-known/api-catalog
+  status: 404
+- host: https://etleap.com
+  path: /.well-known/ai-plugin.json
+  status: 404
+- host: https://docs.etleap.com
+  path: /.well-known/security.txt
+  status: 404
+- host: https://docs.etleap.com
+  path: /.well-known/openid-configuration
+  status: 404
+- host: https://docs.etleap.com
+  path: /.well-known/oauth-authorization-server
+  status: 404
+- host: https://docs.etleap.com
+  path: /.well-known/api-catalog
+  status: 404
+- host: https://docs.etleap.com
+  path: /.well-known/ai-plugin.json
+  status: 404
+result: none
+notes: No /.well-known/ discovery documents were served by any Etleap host in this pass.

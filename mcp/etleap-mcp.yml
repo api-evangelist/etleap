@@ -1,0 +1,69 @@
+generated: '2026-07-19'
+method: derived
+status: candidate
+source: >-
+  Derived from the Etleap API v2 operation surface as published in the official
+  Speakeasy-generated SDK (github.com/etleap/terraform-provider-etleap,
+  internal/sdk/pkg/models/operations). Etleap publishes no hosted MCP server as
+  of this pass; this is a candidate tool list for one grounded in real
+  operationIds.
+server:
+  name: etleap
+  transport: http
+  base_api: https://api.etleap.com/api/v2
+  auth: http-basic
+tools:
+- name: list_pipelines
+  description: List pipelines
+  source_operation: getPipelines
+- name: get_pipeline
+  description: Get a pipeline by id
+  source_operation: getPipeline
+- name: create_pipeline
+  description: Create a pipeline
+  source_operation: createPipeline
+- name: update_pipeline
+  description: Update a pipeline
+  source_operation: updatePipeline
+- name: delete_pipeline
+  description: Delete a pipeline
+  source_operation: deletePipeline
+- name: refresh_pipeline
+  description: Refresh a pipeline
+  source_operation: refreshPipeline
+- name: list_connections
+  description: List source and destination connections
+  source_operation: getConnections
+- name: create_connection
+  description: Create a connection
+  source_operation: createConnection
+- name: list_models
+  description: List models
+  source_operation: getModels
+- name: get_model
+  description: Get a model by id
+  source_operation: getModel
+- name: create_model
+  description: Create a model
+  source_operation: createModel
+- name: update_model
+  description: Update a model
+  source_operation: updateModel
+- name: refresh_model
+  description: Refresh a model
+  source_operation: refreshModel
+- name: list_teams
+  description: List teams
+  source_operation: getTeams
+- name: create_team
+  description: Create a team
+  source_operation: createTeam
+- name: list_users
+  description: List users
+  source_operation: getUsers
+- name: list_dbt_schedules
+  description: List dbt schedules
+  source_operation: getDbtSettings
+- name: create_dbt_schedule
+  description: Create dbt schedules
+  source_operation: createDbtSchedules

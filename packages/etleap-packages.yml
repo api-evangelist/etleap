@@ -1,0 +1,27 @@
+generated: '2026-07-19'
+method: searched
+source: https://registry.terraform.io/providers/etleap/etleap
+packages:
+- language: hcl
+  registry: terraform
+  name: etleap/etleap
+  url: https://registry.terraform.io/providers/etleap/etleap
+  source: https://github.com/etleap/terraform-provider-etleap
+  install: |
+    terraform {
+      required_providers {
+        etleap = {
+          source = "etleap/etleap"
+        }
+      }
+    }
+  official: true
+  notes: >-
+    Official Etleap Terraform provider, generated from the Etleap API v2 OpenAPI
+    definition by Speakeasy. Manages connections, pipelines, models, teams,
+    users, and dbt schedules as infrastructure-as-code. Ships a bundled Go SDK
+    under internal/sdk.
+notes: >-
+  Etleap publishes no first-party npm, PyPI, Maven, NuGet, RubyGems, Packagist,
+  or crates.io client library as of this pass; the Terraform provider (with its
+  embedded Speakeasy-generated Go SDK) is the sole official package.

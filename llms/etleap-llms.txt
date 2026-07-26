@@ -1,0 +1,28 @@
+# Etleap
+
+> Etleap is a managed ETL and data-integration platform that streamlines data ingestion, transformation, and observability so data teams can build cloud data warehouses and lakes with minimal engineering effort. It continuously ingests operational data from 50+ databases, SaaS applications, event streams, and files; shapes it with visual data wrangling and dbt Core; and loads it into Amazon Redshift, Snowflake, Databricks, Amazon S3, and Apache Iceberg. Etleap exposes a REST API v2 (HTTP Basic auth) and ships an official Terraform provider.
+
+## APIs
+
+- [Etleap API v2](https://docs.etleap.com/docs/api-v2): Create and manage connections, pipelines, models, dbt schedules, teams, and users. Base URL https://api.etleap.com/api/v2, HTTP Basic authentication.
+
+## Docs
+
+- [Documentation Hub](https://docs.etleap.com/): Central docs, videos, and interactive API reference.
+- [Documentation](https://docs.etleap.com/documentation/): Quickstarts, user guides, pipelines, dbt Core models, sources, destinations, and reference.
+- [Quickstarts](https://docs.etleap.com/documentation/quickstarts/): Connect a source, connect a destination, create a pipeline.
+- [API v2 Reference](https://docs.etleap.com/docs/api-v2): Interactive OpenAPI reference for the external API.
+
+## Packages
+
+- [Terraform Provider (etleap/etleap)](https://registry.terraform.io/providers/etleap/etleap): Official Speakeasy-generated provider managing Etleap resources as infrastructure-as-code.
+- [GitHub Organization](https://github.com/etleap): terraform-provider-etleap, terraform-aws-etleap-vpc, and related repos.
+
+## Company
+
+- [Etleap](https://etleap.com/): Product site (Iceberg pipeline platform).
+- [Blog](https://etleap.com/blog)
+- [Status](https://status.etleap.com)
+- [Sign in](https://app.etleap.com/#/login)
+- [Terms of Use](https://etleap.com/terms-of-use)
+- [Privacy Policy](https://etleap.com/privacy-policy)

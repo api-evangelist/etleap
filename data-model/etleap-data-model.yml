@@ -1,0 +1,58 @@
+generated: '2026-07-19'
+method: derived
+source: >-
+  Derived from the Etleap API v2 resource surface in the official
+  Speakeasy-generated SDK (github.com/etleap/terraform-provider-etleap).
+entities:
+- name: Connection
+  description: A configured source or destination (50+ connector types, e.g. MySQL, Postgres, Salesforce, S3, Redshift, Snowflake, Iceberg).
+  operations: [getConnections, getConnection, createConnection, deleteConnection]
+- name: Pipeline
+  description: An ingestion + transformation flow moving data from a source connection to a destination connection.
+  operations: [getPipelines, getPipeline, createPipeline, updatePipeline, deletePipeline, refreshPipeline, restartCdcProcess]
+- name: Model
+  description: A dbt/SQL-based transformation model materialized in the destination.
+  operations: [getModels, getModel, createModel, updateModel, deleteModel, refreshModel]
+- name: DbtSchedule
+  description: A schedule for running dbt Core models.
+  operations: [getDbtSettings, getDbtSchedule, createDbtSchedules, updateDbtSchedule, deleteDbtSchedule]
+- name: Team
+  description: A group of users with shared access grants.
+  operations: [getTeams, getTeam, createTeam, deleteTeam, addMembersToTeam, removeTeamMember]
+- name: User
+  description: An Etleap platform user.
+  operations: [getUsers]
+- name: PrimaryKeyOverride
+  description: A primary-key override applied to a pipeline's table schema.
+  operations: [getPrimaryKeyOverrides, getPrimaryKeyOverride, updatePrimaryKey, removePrimaryKeyOverride]
+relationships:
+- from: Pipeline
+  to: Connection
+  kind: belongs_to
+  via: source_and_destination
+  note: A pipeline references a source connection and a destination connection.
+- from: Pipeline
+  to: PrimaryKeyOverride
+  kind: has_many
+  via: pipeline
+- from: Pipeline
+  to: Model
+  kind: has_many
+  via: script/model attached to pipeline (addScriptToPipeline)
+- from: Model
+  to: DbtSchedule
+  kind: has_many
+  via: dbt schedule
+- from: Team
+  to: User
+  kind: has_many
+  via: members
+- name_grants: true
+  from: Team
+  to: Pipeline
+  kind: has_many
+  via: grantAccessToPipeline
+- from: Team
+  to: Model
+  kind: has_many
+  via: grantAccessToModel
