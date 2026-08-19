@@ -1,12 +1,9 @@
 generated: '2026-07-19'
 method: derived
 status: candidate
-source: >-
-  Derived from the Etleap API v2 operation surface as published in the official
-  Speakeasy-generated SDK (github.com/etleap/terraform-provider-etleap,
-  internal/sdk/pkg/models/operations). Etleap publishes no hosted MCP server as
-  of this pass; this is a candidate tool list for one grounded in real
-  operationIds.
+source: Derived from the Etleap API v2 operation surface as published in the official Speakeasy-generated
+  SDK (github.com/etleap/terraform-provider-etleap, internal/sdk/pkg/models/operations). Etleap publishes
+  no hosted MCP server as of this pass; this is a candidate tool list for one grounded in real operationIds.
 server:
   name: etleap
   transport: http
@@ -67,3 +64,9 @@ tools:
 - name: create_dbt_schedule
   description: Create dbt schedules
   source_operation: createDbtSchedules
+deployment:
+  mode: none
+  verified: derived
+  tools: 18
+  checked: '2026-08-12'
+  source: catalog MCP census
