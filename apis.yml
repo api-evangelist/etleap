@@ -91,6 +91,8 @@ apis:
   - type: DataModel
     url: data-model/etleap-data-model.yml
 common:
+- type: Website
+  url: https://www.etleap.com/
 - type: DeveloperPortal
   url: https://docs.etleap.com/
 - type: Documentation
